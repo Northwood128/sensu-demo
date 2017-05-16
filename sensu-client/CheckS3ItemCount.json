@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "S3ItemCountSensuDemo": {
+      "command": "/opt/sensu/plugins/check_s3_itemcount.py -b sensu-demo",
+      "interval": 30,
+      "timeout": 15,
+      "standalone": true,
+      "handler": "mailer",
+      "playbook": "https://aws.amazon.com/s3/"
+    }
+  }
+}

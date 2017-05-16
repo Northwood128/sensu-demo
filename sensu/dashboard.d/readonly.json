@@ -1,0 +1,11 @@
+{
+  "uchiwa": {
+	  "users": [
+	      {
+		"username" : "readonly",
+		"password": "rouser",
+		"readonly": true
+	      }
+	  ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "client":{
+    "name":"supercoolwebserver",
+    "address":"10.0.0.24",
+    "environment":"development",
+    "subscriptions":[
+      "dev",
+      "linux-servers"
+    ],
+    "socket":{
+      "bind":"127.0.0.1",
+      "port":3030
+    }
+  }
+}

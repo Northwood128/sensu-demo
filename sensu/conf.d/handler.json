@@ -1,0 +1,17 @@
+{
+  "mailer": {
+    "admin_gui": "https://sensuserver.example.com",
+    "mail_from": "sensu@example.com",
+    "mail_to": "arecalde@edrans.com",
+    "smtp_address": "localhost",
+    "smtp_port": "25"
+  },
+  "handlers": {
+    "mailer": {
+      "type": "pipe",
+      "command": "/opt/sensu/embedded/bin/handler-mailer.rb -j mailer",
+      "filters": ["recurrences"],
+      "severities": ["ok", "warning", "critical"]
+    }
+  }
+}
